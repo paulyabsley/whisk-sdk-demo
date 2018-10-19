@@ -8,20 +8,25 @@ $title = $recipe["title"];
 $description = $recipe["description"];
 
 include_once '_header.php';
-echo '<article class="h-recipe" itemscope itemtype="http://schema.org/Recipe">';
-echo '<h1 class="p-name fn"><span itemprop="name">' . $title . '</span></h1>';
-echo '<p class="p-summary">' . $description . '</p>';
+echo '<article itemscope itemtype="http://schema.org/Recipe">';
+echo '<h1 itemprop="name">' . $title . '</h1>';
+echo '<img src="/images/' . $recipe["image"] . '" alt="" itemprop="image">';
+echo '<p itemprop="description">' . $description . '</p>';
+echo '<ul>';
+echo '<li>Prep time: ' . $recipe["prep_time"] . '</li>';
+echo '<li>Cook time: ' . $recipe["cook_time"] . '</li>';
+echo '</ul>';
 echo '<h2>Ingredients</h2>';
 echo '<ul>';
 foreach ($recipe["ingredients"] as $key => $ingredient) {
-	echo '<li class="p-ingredient"><span itemprop="recipeIngredient">' . $ingredient . '</span></li>';
+	echo '<li itemprop="recipeIngredient">' . $ingredient . '</li>';
 }
 echo '</ul>';
 echo '<button type="button" id="recipe-ingredients">Buy Ingredients</button>';
 echo '<h2>Directions</h2>';
-echo '<ol class="e-instructions" itemprop="recipeInstructions">';
+echo '<ol class="e-instructions" itemprop="HowToSection">';
 foreach ($recipe["directions"] as $key => $direction) {
-	echo '<li>' . $direction . '</li>';
+	echo '<li itemprop="HowToStep">' . $direction . '</li>';
 }
 echo '</ol>';
 echo '</article>';
