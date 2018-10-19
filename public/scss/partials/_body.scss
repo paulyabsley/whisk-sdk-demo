@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: $colour_white;
+	color: $colour_black;
+	font-family: $font_body;
+	margin: 0;
+}
+
+.container {
+	background: $colour_white;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1440px;
+	position: relative;
+}
+
+strong em,
+strong b {
+	font-style: normal;
+}
+
+strong,
+b {
+	font-weight: 600;
+}

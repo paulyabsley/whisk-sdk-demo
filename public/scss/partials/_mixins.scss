@@ -1,0 +1,102 @@
+//-----------------------------------------------
+// Gradients
+//-----------------------------------------------
+
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+
+//-----------------------------------------------
+// Font Sizing
+//-----------------------------------------------
+
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+	font-size: $size; // Fallback in px
+	font-size: calculateRem($size);
+}
+
+//-----------------------------------------------
+// Aspect Box
+//-----------------------------------------------
+
+@mixin aspectBox($width, $height) {
+	&:after {
+		content: '';
+		display: block;
+		padding-top: calc(#{$height} / #{$width} * 100%);
+	}
+}
+
+//-----------------------------------------------
+// Faux Grid
+//-----------------------------------------------
+
+@mixin fauxGrid() {
+	&:after {
+		@include breakpoint(medium) {
+			border-left: 1px solid $colour_white;
+			content: '';
+			display: block;
+			opacity: .15;
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 50%;
+			width: 50%;
+		}
+
+		@include breakpoint(large) {
+			border-right: 1px solid $colour_white;
+			left: 33.333%;
+			width: 33.333%;
+		}
+	}
+}
+
+//-----------------------------------------------
+// Common styles
+//-----------------------------------------------
+
+@mixin textLink() {
+	border-bottom: 1px solid lighten($colour_text_link, 40%);
+	color: $colour_text_link;
+
+	&:focus,
+	&:hover {
+		border-bottom: 1px solid $colour_text_link;
+		color: darken($colour_text_link, 10%);
+	}
+}
+
+//-----------------------------------------------
+// Debugging
+//-----------------------------------------------
+
+@mixin outline($color: gold, $type: solid) {
+	border: 1px $type $color;
+}
+
+// Debug Box
+@mixin db() {
+	@include outline($colour_rgb_114, dotted);
+}
+
+//-----------------------------------------------
+// Content Spacing
+//-----------------------------------------------
+
+@mixin contentSpacing() {
+	p + p, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + ul, p + ol, p + blockquote, p + .two-columns, h1 + p, h1 + h1, h1 + h2,  h1 + h3, h1 + h4, h1 + h5, h1 + h6, h1 + ul, h1 + ol, h1 + blockquote, h1 + .two-columns, h2 + p, h2 + h1, h2 + h2,  h2 + h3, h2 + h4, h2 + h5, h2 + h6, h2 + ul, h2 + ol, h2 + blockquote, h2 + .two-columns, h3 + p, h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h3 + ul, h3 + ol, h3 + blockquote, h3 + .two-columns, h4 + p, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6, h4 + ul, h4 + ol, h4 + blockquote, h4 + .two-columns, h5 + p, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h5 + ul, h5 + ol, h5 + blockquote, h5 + .two-columns, h6 + p, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6, h6 + ul, h6 + ol, h6 + blockquote, h6 + .two-columns, ul + p, ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6, ul + ul, ul + ol, ul + blockquote, ul + .two-columns, ol + p, ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6, ol + ul, ol + ol, ol + blockquote, ol + .two-columns, blockquote + p, blockquote + h1, blockquote + h2, blockquote + h3, blockquote + h4, blockquote + h5, blockquote + h6, blockquote + ul, blockquote + ol, blockquote + blockquote, blockquote + .two-columns, .two-columns + p, .two-columns + h1, .two-columns + h2, .two-columns + h3, .two-columns + h4, .two-columns + h5, .two-columns + h6, .two-columns + ul, .two-columns + ol, .two-columns + .two-columns, .two-columns + .two-columns {
+		@content;
+	}
+}

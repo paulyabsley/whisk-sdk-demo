@@ -2,25 +2,35 @@
 	"Elderflower and Lemon Curd Celebration Cake": {
 		"title": "Elderflower and Lemon Curd Celebration Cake",
 		"description": "Having a celebration? Delight your guests with this fresh tasting Elderflower and Lemon Curd cake.",
-		"prep_time": "20 minutes",
-		"cook_time": "30 minutes",
+		"prep_time": "PT20M",
+		"prep_time_long": "20 minutes",
+		"cook_time": "PT30M",
+		"cook_time_long": "30 minutes",
+		"yeild": "1 Cake",
+		"yeild_long": "1 Cake",
 		"image": "elderflower-and-lemon-curd-celebration-cake.jpg",
 		"ingredients": {
-			"0": "250g Flora Buttery",
-			"1": "250g caster sugar",
-			"2": "4 medium eggs",
-			"3": "250g self-raising flour",
-			"4": "2 lemons zest and juice",
-			"5": "1/2 jar good-quality lemon curd",
-			"6": "Flora Icing",
-			"7": "200g Flora Buttery",
-			"8": "500g icing sugar",
-			"9": "2 tbsps elderflower cordial",
-			"10": "2 tbsps lemon juice",
-			"11": "Drizzle",
-			"12": "2 tbsps elderflower cordial",
-			"13": "2 tbsps lemon juice",
-			"14": "Pesticide free flowers of choice for decoration"
+			"Cake": {
+				"0": "250g Flora Buttery",
+				"1": "250g caster sugar",
+				"2": "4 medium eggs",
+				"3": "250g self-raising flour",
+				"4": "2 lemons zest and juice",
+				"5": "1/2 jar good-quality lemon curd"
+			},
+			"Flora Icing": {
+				"0": "200g Flora Buttery",
+				"1": "500g icing sugar",
+				"2": "2 tbsps elderflower cordial",
+				"3": "2 tbsps lemon juice"
+			},
+			"Drizzle": {
+				"12": "2 tbsps elderflower cordial",
+				"13": "2 tbsps lemon juice"
+			},
+			"Decoration": {
+				"0": "Pesticide free flowers of choice for decoration"
+			}
 		},
 		"directions": {
 			"0": "Preheat oven to 180°C, 160°C fan, Gas mark 4. Grease and bottom line 2 2 x 20cm round cake tins with baking paper.",
