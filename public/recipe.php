@@ -24,7 +24,7 @@ foreach ($recipe["ingredients"] as $key => $ingredient) {
 		echo '<h3>' . $key . '<h3>';
 		echo '<ul>';
 		foreach ($ingredient as $key => $ing) {
-			echo '<li>' . $ing . '</li>';
+			echo '<li itemprop="recipeIngredient">' . $ing . '</li>';
 		}
 		echo '</ul>';
 	} else {
