@@ -33,20 +33,20 @@ echo '</div>'; // .recipe__meta
 
 echo '<div class="recipe__ingredients">'; 
 echo '<h2>Ingredients</h2>';
-echo '<ul>';
 foreach ($recipe["ingredients"] as $key => $ingredient) {
 	if (is_array($ingredient)) {
 		echo '<h3>' . $key . '<h3>';
 		echo '<ul>';
 		foreach ($ingredient as $key => $ing) {
-			echo '<li itemprop="recipeIngredient">' . $ing . '</li>';
+			echo '<li itemprop="recipeIngredient" content="' . $ing . '">' . $ing . '</li>';
 		}
 		echo '</ul>';
 	} else {
-		echo '<li itemprop="recipeIngredient">' . $ingredient . '</li>';
+		if ($key == 0) echo '<ul>';
+		echo '<li itemprop="recipeIngredient" content="' . $ingredient . '">' . $ingredient . '</li>';
+		if ($key == count($recipe["ingredients"]) - 1) echo '</ul>';
 	}
 }
-echo '</ul>';
 echo '<button type="button" id="recipe-ingredients">Buy Ingredients</button>';
 echo '</div>'; // .recipe__ingredients
 
