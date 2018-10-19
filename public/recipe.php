@@ -28,24 +28,24 @@ include_once '_header.php';
 
 ?>
 
-<article class="h-recipe">
-  <h1 class="p-name">Bagels</h1>
- 
-  <ul>
-    <li class="p-ingredient">Flour</li>
-    <li class="p-ingredient">Sugar</li>
-    <li class="p-ingredient">Yeast</li>
-  </ul>
- 
-  <p>Takes <time class="dt-duration" datetime="1H">1 hour</time>,
-     serves <data class="p-yield" value="4">four people</data>.</p>
- 
-  <div class="e-instructions">
-    <ol>
-      <li>Start by mixing all the ingredients together.</li>
-    </ol>
-  </div>
-</article><button type="button" id="recipe-ingredients">Buy Ingredients</button>
+<div itemscope itemtype="http://schema.org/Recipe">
+   <span itemprop="name">Banana Bread</span> 
+
+   <img itemprop="image" src="bananabread.jpg" alt="Banana bread" />
+
+   Prep Time: <meta itemprop="prepTime" content="PT15M">15 minutes 
+   Cook time: <meta itemprop="cookTime" content="PT1H">1 hour 
+   Yield: <span itemprop="recipeYield">1 loaf</span> 
+
+   Ingredients: 
+   - <span itemprop="recipeIngredient">banana</span> 
+   - <span itemprop="recipeIngredient">egg</span> 
+   - <span itemprop="recipeIngredient">sugar</span> 
+
+   Instructions:
+   <span itemprop="recipeInstructions"> Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the flour last. Pour the mixture into a loaf pan and bake for one hour.</span> 
+</div>
+<button type="button" id="recipe-ingredients">Buy Ingredients</button>
 
 <?php
 
