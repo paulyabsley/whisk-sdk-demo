@@ -1,0 +1,61 @@
+{
+	"Elderflower and Lemon Curd Celebration Cake": {
+		"title": "Elderflower and Lemon Curd Celebration Cake",
+		"description": "Having a celebration? Delight your guests with this fresh tasting Elderflower and Lemon Curd cake.",
+		"prep_time": "20 minutes",
+		"cook_time": "30 minutes",
+		"image": "elderflower-and-lemon-curd-celebration-cake.jpg",
+		"ingredients": {
+			"0": "250 g Flora Buttery",
+			"1": "250 g caster sugar",
+			"2": "4 medium eggs",
+			"3": "250 g self-raising flour",
+			"4": "2 lemons zest and juice",
+			"5": "1/2 jar good-quality lemon curd",
+			"6": "Flora Icing",
+			"7": "200 g Flora Buttery",
+			"8": "500 g icing sugar",
+			"9": "2 tbsps elderflower cordial",
+			"10": "2 tbsps lemon juice",
+			"11": "Drizzle",
+			"12": "2 tbsps elderflower cordial",
+			"13": "2 tbsps lemon juice",
+			"14": "Pesticide free flowers of choice for decoration"
+		},
+		"directions": {
+			"0": "Preheat oven to 180°C, 160°C fan, Gas mark 4. Grease and bottom line 2 2 x 20cm round cake tins with baking paper.",
+			"1": "Beat the Flora Buttery and sugar together until light and fluffy. Beat in the eggs one at a time, then fold in the lemon zest and flour. Divide evenly between the two cake tins and level the surface.",
+			"2": "Bake for 30 minutes or until a skewer comes out clean. Leave to cool for 5 minutes then turn out to cool on a cooling rack.",
+			"3": "To make the icing beat the Flora Buttery and icing sugar together with 2 tablespoons of elderflower cordial and 2 tablespoons of lemon juice until light and creamy. To make the drizzle simply blend 2 tablespoons elderflower cordial with 2 tablespoons lemon juice (or more if you like a sharper lemon flavour).",
+			"4": "To assemble, slice each of the sponges horizontally and place the first sponge on a serving plate. Sprinkle a little drizzle over the base, then spread lemon curd over and top with the 2nd sponge. Sprinkle drizzle over and spread a layer of icing. Top with the 3rd sponge, sprinkle with drizzle and spread with lemon curd. Top with the remaining sponge and spread icing all over the cake to coat.",
+			"5": "Pipe a ring of pearls around the base of the cake, decorate with fresh flowers and serve."
+		}
+	},
+	"Chocolate Brownies": {
+		"title": "Chocolate Brownies",
+		"description": "No-one can resist a rich, gooey chocolate brownie. This easy recipe includes cocoa powder, dark chocolate, vanilla, set natural yogurt and Flora Cuisine – all speckled with crunchy flaked almonds. Just mix them all up, pour into a pan and bake. Simple. With very little effort you’ll be cutting up warm chocolate brownies ready to hand out – but be warned, they’ll all be gone just as quickly and easily!",
+		"prep_time": "20 minutes",
+		"cook_time": "45 minutes",
+		"image": "chocolate-brownies.jpg",
+		"ingredients": {
+			"0": "115 g (4oz) plain chocolate",
+			"1": "4 tbsp Flora Cuisine",
+			"2": "3 Medium eggs",
+			"3": "225 g (8oz) caster sugar",
+			"4": "1 tsp vanilla extract",
+			"5": "40 g (1½oz) plain flour",
+			"6": "25 g (1oz) cocoa powder",
+			"7": "1 tsp baking powder",
+			"8": "55 g (2oz) natural yogurt",
+			"9": "85 g (3oz) flaked almonds"
+		},
+		"directions": {
+			"0": "Break the chocolate into a bowl and melt over a pan of hot water (or in a microwave on medium power). Add the Flora Cuisine.",
+			"1": "In a large bowl, whisk the eggs with the sugar and vanilla until creamy and slightly thickened.",
+			"2": "Sieve the dry ingredients and add to the eggs with the chocolate mixture, yogurt and nuts. Mix gently.",
+			"3": "Pour into a greased 22cm (9 inch) square tin.",
+			"4": "Bake in a preheated oven at 160°C, 150°C fan, gas mark 3 for 45–55 minutes.",
+			"5": "Leave to cool before cutting into squares."
+		}
+	}
+}
