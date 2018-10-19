@@ -8,15 +8,30 @@ $title = $recipe["title"];
 $description = $recipe["description"];
 
 include_once '_header.php';
-echo '<article itemscope itemtype="http://schema.org/Recipe">';
+
+echo '<header class="header" style="background-image: url(/images/' . $recipe["image"] . '">';
+echo '<h1>' . $title . '</h1>';
+echo '</header>';
+
+echo '<div class="container">';
+echo '<article itemscope itemtype="http://schema.org/Recipe" class="recipe">';
 echo '<h1 itemprop="name">' . $title . '</h1>';
+
+echo '<div class="recipe__meta">';
+echo '<div class="recipe__image">';
 echo '<img src="/images/' . $recipe["image"] . '" alt="" itemprop="image">';
+echo '</div>'; // .recipe__image
+echo '<div class="recipe__details">';
 echo '<p itemprop="description">' . $description . '</p>';
 echo '<ul>';
 echo '<li>Prep time: <meta itemprop="prepTime" content="' . $recipe["prep_time"] . '">' . $recipe["prep_time_long"] . '</li>';
 echo '<li>Cook time: <meta itemprop="cookTime" content="' . $recipe["cook_time"] . '">' . $recipe["cook_time_long"] . '</li>';
 echo '<li>Serving: <meta itemprop="recipeYield" content="' . $recipe["yeild"] . '">' . $recipe["yeild_long"] . '</li>';
 echo '</ul>';
+echo '</div>'; // .recipe__image
+echo '</div>'; // .recipe__meta
+
+echo '<div class="recipe__ingredients">'; 
 echo '<h2>Ingredients</h2>';
 echo '<ul>';
 foreach ($recipe["ingredients"] as $key => $ingredient) {
@@ -33,11 +48,18 @@ foreach ($recipe["ingredients"] as $key => $ingredient) {
 }
 echo '</ul>';
 echo '<button type="button" id="recipe-ingredients">Buy Ingredients</button>';
-echo '<h2>Directions</h2>';
+echo '</div>'; // .recipe__ingredients
+
+echo '<div class="recipe__method">'; 
+echo '<h2>Method</h2>';
 echo '<ol itemprop="recipeInstructions">';
 foreach ($recipe["directions"] as $key => $direction) {
 	echo '<li itemprop="HowToStep">' . $direction . '</li>';
 }
 echo '</ol>';
+echo '</div>'; // .recipe__method
+
 echo '</article>';
+echo '</div>'; // .container
+
 include_once '_footer.php';

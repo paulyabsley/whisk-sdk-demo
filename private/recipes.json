@@ -44,8 +44,12 @@
 	"Chocolate Brownies": {
 		"title": "Chocolate Brownies",
 		"description": "No-one can resist a rich, gooey chocolate brownie. This easy recipe includes cocoa powder, dark chocolate, vanilla, set natural yogurt and Flora Cuisine – all speckled with crunchy flaked almonds. Just mix them all up, pour into a pan and bake. Simple. With very little effort you’ll be cutting up warm chocolate brownies ready to hand out – but be warned, they’ll all be gone just as quickly and easily!",
-		"prep_time": "20 minutes",
-		"cook_time": "45 minutes",
+		"prep_time": "PT20M",
+		"prep_time_long": "20 minutes",
+		"cook_time": "PT45M",
+		"cook_time_long": "45 minutes",
+		"yeild": "5 - 7",
+		"yeild_long": "Serves 4 - 6",
 		"image": "chocolate-brownies.jpg",
 		"ingredients": {
 			"0": "115 g (4oz) plain chocolate",
