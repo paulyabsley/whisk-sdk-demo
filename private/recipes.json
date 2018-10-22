@@ -71,5 +71,31 @@
 			"4": "Bake in a preheated oven at 160°C, 150°C fan, gas mark 3 for 45–55 minutes.",
 			"5": "Leave to cool before cutting into squares."
 		}
+	},
+	"American Pancakes": {
+		"title": "American Pancakes",
+		"description": "These American pancakes are thick, fluffy and ready to stack high on a plate, just like in the movies! The difference from regular pancakes is that these bubble and rise a little in the pan – but they are still wonderfully simple to make. Serve them with Flora Buttery, syrup and fruit (or even crisp bacon for a special treat) for a deliciously easy breakfast recipe.",
+		"prep_time": "PT5M",
+		"prep_time_long": "5 minutes",
+		"cook_time": "PT4M",
+		"cook_time_long": "4 minutes",
+		"yeild": "4 - 6",
+		"yeild_long": "Serves 4 - 6",
+		"image": "american-pancakes.jpg",
+		"ingredients": {
+			"0": "125 g (4.5 oz) self-raising flour",
+			"1": "2 tsp baking powder",
+			"2": "1/4 tsp salt",
+			"3": "1 Medium egg",
+			"4": "250 ml (8fl oz) milk",
+			"5": "2 tbsp Flora Cuisine"
+		},
+		"directions": {
+			"0": "In a medium mixing bowl sift all of the dry ingredients together. Make a well in the middle and set aside.",
+			"1": "In a separate bowl or jug, combine the wet ingredients and whisk together until well combined.",
+			"2": "Add the wet mix to the dry mix and stir until just moistened. The mixture will be lumpy but that’s fine.",
+			"3": "Heat a frying pan and add a little Flora Cuisine. Once it's hot, drop ladles of the mix onto the pan. Once they are bubbly on the top and the edges appear dry (after about 2 minutes), it’s time to turn them.",
+			"4": "Cook for a further 2 mins. Serve immediately with a dollop of Flora Buttery and maple or golden syrup."
+		}
 	}
 }

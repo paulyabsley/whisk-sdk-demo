@@ -1,7 +1,6 @@
 <?php
 require_once('../private/init.php');
 
-
 $url_val = filter_input(INPUT_GET, 'recipe', FILTER_SANITIZE_STRING);
 $recipe = get_recipe_from_url($url_val);
 $title = $recipe["title"];
@@ -15,15 +14,15 @@ echo '</header>';
 
 echo '<div class="container">';
 echo '<article itemscope itemtype="http://schema.org/Recipe" class="recipe">';
-echo '<h1 itemprop="name">' . $title . '</h1>';
+echo '<h1 itemprop="name" class="recipe__title">' . $title . '</h1>';
 
 echo '<div class="recipe__meta">';
 echo '<div class="recipe__image">';
 echo '<img src="/images/' . $recipe["image"] . '" alt="" itemprop="image">';
 echo '</div>'; // .recipe__image
 echo '<div class="recipe__details">';
-echo '<p itemprop="description">' . $description . '</p>';
-echo '<ul>';
+echo '<p class="recipe__description" itemprop="description">' . $description . '</p>';
+echo '<ul class="recipe__info-list">';
 echo '<li>Prep time: <meta itemprop="prepTime" content="' . $recipe["prep_time"] . '">' . $recipe["prep_time_long"] . '</li>';
 echo '<li>Cook time: <meta itemprop="cookTime" content="' . $recipe["cook_time"] . '">' . $recipe["cook_time_long"] . '</li>';
 echo '<li>Serving: <meta itemprop="recipeYield" content="' . $recipe["yeild"] . '">' . $recipe["yeild_long"] . '</li>';
