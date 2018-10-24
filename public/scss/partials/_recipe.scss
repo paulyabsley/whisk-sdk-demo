@@ -54,7 +54,7 @@
 	}
 
 	&__body {
-		background: $colour_white;
+		background: rgba($colour_white, .8);
 		box-shadow: 8px 8px 0 $colour_primary;
 		color: $colour_offblack;
 		padding: 50px;

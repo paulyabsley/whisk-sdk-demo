@@ -97,5 +97,41 @@
 			"3": "Heat a frying pan and add a little Flora Cuisine. Once it's hot, drop ladles of the mix onto the pan. Once they are bubbly on the top and the edges appear dry (after about 2 minutes), it’s time to turn them.",
 			"4": "Cook for a further 2 mins. Serve immediately with a dollop of Flora Buttery and maple or golden syrup."
 		}
+	},
+	"Pumpkin & Orange Spider Muffins": {
+		"title": "Pumpkin & Orange Spider Muffins",
+		"description": "Made with a healthy helping of pumpkin, these muffins taste a bit like carrot cake. Decorating them is a great chance to practise your icing skills, and because you’re making cobwebs, you needn’t worry about getting the lines perfectly straight. You even get to make a scary spider from liquorice sweets and laces!",
+		"prep_time": "PT15M",
+		"prep_time_long": "15 minutes",
+		"cook_time": "PT25M",
+		"cook_time_long": "25 minutes",
+		"yeild": "4 - 6",
+		"yeild_long": "Serves 4 - 6",
+		"image": "pumpkin-and-orange-spider-muffins.jpg",
+		"ingredients": {
+			"Muffins": {
+				"0": "175 g (6oz) Flora Buttery",
+				"1": "175 g (6oz) golden caster sugar",
+				"2": "300 g (11oz) self raising flour, sieved",
+				"3": "3 medium eggs",
+				"4": "5 tablespoons semi skimmed milk",
+				"5": "100 g cooked pumpkin or butternut squash, mashed",
+				"6": "40 g chocolate-hazelnut spread",
+				"7": "zest of 1 orange"
+			},
+			"Topping": {
+				"0": "115 g icing sugar",
+				"1": "A little orange juice",
+				"2": "55 g (2oz) plain chocolate, melted",
+				"3": "Liquorice allsorts, to decorate"
+			}
+		},
+		"directions": {
+			"0": "Place 12 muffin cases into a muffin tray.",
+			"1": "Place the first six ingredients into a bowl, and beat with a wooden spoon until the mixture is smooth.",
+			"2": "Stir in pumpkin mash and orange zest and divide half the mixture evenly between the paper cases, add a half teaspoon chocolate spread and then top with remaining mix.",
+			"3": "Bake in a pre-heated oven for 20-25 minutes oven 200°C, 180°C (fan assisted), Gas mark 6 for 20-25 minutes.",
+			"4": "Add a little orange juice to the icing sugar until thick and spread over the muffins. Pipe the melted chocolate in 4 circles over the top and then drag a skewer through to give the cobweb effect. Place the sweets and laces on top to look like a spider."
+		}
 	}
 }
