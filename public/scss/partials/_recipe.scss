@@ -1,28 +1,150 @@
 .recipe {
-	padding: 100px;
+	&__head {
+		&-inner {
+			background: $colour_secondary;
+			box-shadow: 8px 8px 0 $colour_primary;
+			height: 350px;
+			position: relative;
+		}
 
-	h1 {
-		margin-bottom: 50px;
+		&-image {
+			background-position: center;
+			background-size: cover;
+			height: 100%;
+			left: 0;
+			opacity: .1;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		&-title {
+			color: $colour_primary;
+			font-size: 3.5rem;
+			font-style: italic;
+			left: 50%;
+			letter-spacing: 1px;
+			max-width: 60%;
+			padding: 20px 0;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			transform: translate3d(-50%, -50%, 0);
+			width: 100%;
+		}
+
+		&-meta {
+			color: $colour_primary;
+			display: flex;
+			left: 50%;
+			list-style: none;
+			position: absolute;
+			bottom: 12%;
+			transform: translate3d(-50%, 0, 0);
+
+			&-item {
+				border-right: 1px solid $colour_primary;
+				padding: 0 20px;
+
+				&:last-of-type {
+					border-right: none;
+				}
+			}
+		}
 	}
 
-	&__meta {
+	&__body {
+		background: $colour_white;
+		box-shadow: 8px 8px 0 $colour_primary;
+		color: $colour_offblack;
+		padding: 50px;
+		margin-top: 50px;
+	}
+
+	&__intro {
 		display: flex;
 	}
 
-	&__details {
-		flex-grow: 1;
-		order: -1; 
+	&__description {
+		color: $colour_secondary;
+		font-size: 1.7rem;
+		line-height: 1.5;
 	}
 
 	&__image {
-		flex-basis: 30%;
+		align-self: flex-start;
+		box-shadow: 8px 8px 0 $colour_primary;
+		flex-shrink: 0;
+		margin-right: 50px;
+		width: 400px;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__instructions {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
 	}
 
 	&__ingredients {
-		margin-top: 50px;
+		flex-basis: 30%;
+		flex-shrink: 0;
+		margin-left: 50px;
 	}
 
 	&__method {
-		margin-top: 50px;
+		flex-basis: 60%;
+	}
+
+	&__sub-head {
+		color: $colour_secondary;
+		font-size: 2rem;
+		font-style: italic;
+		margin-bottom: 30px;
+	}
+
+	&__tertiary-head {
+		color: $colour_secondary;
+		font-size: 1rem;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+
+	&__ingredient-list {
+		margin-bottom: 25px;
+
+		li {
+			line-height: 1.5;
+		}
+	}
+
+	&__method-list {
+		li {
+			line-height: 1.5;
+			margin-bottom: 20px;
+			max-width: 40rem;
+		}	
+	}
+
+	&__buy {
+		background: $colour_secondary;
+		border: none;
+		box-shadow: 8px 8px 0 $colour_primary;
+		color: $colour_primary;
+		font-family: $font_body;
+		font-size: 1rem;
+		font-weight: 300;
+		letter-spacing: .02rem;
+		margin-top: 15px;
+		padding: 15px 20px;
+
+		&:hover {
+			background: $colour_primary;
+			box-shadow: 8px 8px 0 $colour_secondary;
+			color: $colour_secondary;
+		}
 	}
 }
