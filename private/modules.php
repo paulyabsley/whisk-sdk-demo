@@ -14,6 +14,40 @@ function module_page_header($title) {
 }
 
 /**
+ * Recipe Card List
+ * @param string $recipes
+ * @return string
+ */
+function module_recipe_card_list($recipes) {
+	$bc = 'r-list';
+	$o = '<section class="' . $bc . '">';
+	$o .= '<ul class="' . $bc . '__cards">';
+	foreach ($recipes as $recipe) {
+		$o .= module_recipe_card($recipe);
+	}
+	$o .= '</ul>'; // $bc__cards
+	$o .= '</section>';
+	return $o;
+}
+
+/**
+ * Recipe Card
+ * @param string $recipe
+ * @return string
+ */
+function module_recipe_card($recipe) {
+	$bc = 'r-card';
+	$slug = slugify($recipe["title"]);
+	$o = '<li class="' . $bc . '">';
+	$o .= '<h2 class="' . $bc . '__title">';
+	$o .= '<a href="/recipe/' . $slug . '/" class="' . $bc . '__link">' . $recipe["title"] . '</a>';
+	$o .= '</h2>'; // $bc__title
+	$o .= '<div class="' . $bc . '__image" style="background-image: url(/images/' . $recipe["image"] . ')"></div>';
+	$o .= '</li>';
+	return $o;
+}
+
+/**
  * Recipe
  * @param array $recipe
  * @return string

@@ -9,11 +9,6 @@ $recipes = get_data('recipes');
 include_once '_header.php';
 echo '<div class="container">';
 echo module_page_header($title);
-echo '<ul>';
-foreach ($recipes as $key => $value) {
-	$slug = slugify($key);
-	echo '<li><a href="/recipe/' . $slug . '/">' . $key . '</a></li>';
-}
-echo '</ul>';
+echo module_recipe_card_list($recipes);
 echo '</div>';
 include_once '_footer.php';
