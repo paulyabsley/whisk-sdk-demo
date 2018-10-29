@@ -7,6 +7,10 @@
 	margin-bottom: 50px;
 	position: relative;
 
+	&:hover {
+		box-shadow: 8px 8px 0 $colour_secondary;
+	}
+
 	&__image {
 		@include aspectBox(1, .5);
 		background-color: $colour_secondary;
