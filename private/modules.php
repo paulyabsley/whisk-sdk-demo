@@ -1,6 +1,19 @@
 <?php
 
 /**
+ * Header
+ * @param string $title
+ * @return string
+ */
+function module_page_header($title) {
+	$bc = 'header';
+	$o = '<header class="' . $bc . '">';
+	$o .= '<h1 class="' . $bc . '__title">' . $title . '</h1>';
+	$o .= '</header>';
+	return $o;
+}
+
+/**
  * Recipe
  * @param array $recipe
  * @return string
@@ -30,7 +43,7 @@ function module_recipe_header($recipe) {
 	$bc = 'recipe__head';
 	$o = '';
 	$o .= '<header class="' . $bc . '">';
-	$o .= '<div class="' . $bc . '-inner">';	
+	$o .= '<div class="' . $bc . '-inner">';
 	$o .= '<div class="' . $bc . '-image" style="background-image: url(/images/' . $recipe["image"] . '"></div>';
 	$o .= '<h1 class="' . $bc . '-title" itemprop="name">' . $recipe["title"] . '</h1>';
 	$o .= '<ul class="' . $bc . '-meta">';

@@ -7,11 +7,13 @@ $description = "Allow users to add all your recipes and products to an eCommerce
 $recipes = get_data('recipes');
 
 include_once '_header.php';
-echo '<h1>' . $title . '</h1>';
+echo '<div class="container">';
+echo module_page_header($title);
 echo '<ul>';
 foreach ($recipes as $key => $value) {
 	$slug = slugify($key);
 	echo '<li><a href="/recipe/' . $slug . '/">' . $key . '</a></li>';
 }
 echo '</ul>';
+echo '</div>';
 include_once '_footer.php';

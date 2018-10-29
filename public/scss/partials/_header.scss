@@ -1,0 +1,21 @@
+.header {
+	background: rgba($colour_secondary, .85);
+	box-shadow: 8px 8px 0 $colour_primary;
+	height: 350px;
+	position: relative;
+
+	&__title {
+		color: $colour_primary;
+		font-size: 3.5rem;
+		font-style: italic;
+		left: 50%;
+		letter-spacing: 1px;
+		max-width: 60%;
+		padding: 20px 0;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		width: 100%;
+	}
+}
