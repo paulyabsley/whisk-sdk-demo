@@ -21,6 +21,19 @@ h1 {
 	margin-bottom: 0;
 }
 
+.button {
+	background: #ffc600;
+	border: 3px solid black;
+	border-radius: 8px;
+	cursor: pointer;
+	display: block;
+	font-family: 'Amatic SC', cursive;
+	font-size: 4rem;
+	margin: 20px auto 0;
+	outline: none;
+	padding: 5px 30px;
+}
+
 .score {
 	background:rgba(255,255,255,0.2);
 	padding:0 3rem;
@@ -55,8 +68,9 @@ h1 {
 }
 
 .mole {
-	background:url('mole.svg') bottom center no-repeat;
+	background:url('matt.png') bottom center no-repeat;
 	background-size:60%;
+	cursor: grabbing;
 	position: absolute;
 	top: 100%;
 	width: 100%;
