@@ -193,5 +193,33 @@
 			"4": "Meanwhile cook the pasta following packet instructions and drain.",
 			"5": "Toss the hot pasta with the roasted vegetables and the herb-and-lemon mixture. Season to taste and serve immediately."
 		}
+	},
+	"Lemon-ginger Chicken Nuggets": {
+		"title": "Lemon-ginger Chicken Nuggets",
+		"description": "When grilled chicken just won’t do, these crispy and zingy little bites transform mealtime into a social affair. The zesty lemon keeps the chicken beautifully succulent and the ginger gives it a hint of warmth. Throw in salt and pepper for seasoning and fry in the pan until they get a beautiful golden coat. Then all that’s left is to decide on is your dip!",
+		"prep_time": "PT10M",
+		"prep_time_long": "10 minutes",
+		"cook_time": "PT20M",
+		"cook_time_long": "20 minutes",
+		"yeild": "4 - 6",
+		"yeild_long": "Serves 4 - 6",
+		"image": "lemon-ginger-chicken-nuggets.jpg",
+		"ingredients": {
+			"0": "4 cm piece fresh ginger",
+			"1": "juice of 1/2 lemon",
+			"2": "1 clove garlic, crushed",
+			"3": "2 skinless chicken breast fillet, cut into even-sized strips",
+			"4": "salt and pepper",
+			"5": "1 tbsp flour",
+			"6": "1 egg",
+			"7": "25 g fresh breadcrumbs, for coating",
+			"8": "2- 3 tbsp Flora Cuisine, for shallow frying"
+		},
+		"directions": {
+			"0": "Squeeze the juice from the ginger by grating it, placing in a cloth and squeezing.",
+			"1": "Combine the ginger juice, lemon juice and garlic and rub this mixture over the chicken strips, seasoning with a little salt and pepper.",
+			"2": "Coat the chicken first in flour, then in beaten egg and finally in breadcrumbs.",
+			"3": "Heat the Flora Cuisine in a large, heavy-based frying pan over a low heat. Gently fry in batches until cooked through and golden."
+		}
 	}
 }
