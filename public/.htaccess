@@ -1,7 +1,6 @@
 Options +FollowSymLinks -Multiviews -Indexes
 RewriteEngine on
 
-RewriteRule ^whack-a-matt/?$ /whack-a-mole/index.html [L]
 RewriteRule ^([a-z0-9-]+)/?$ /$1.php [L]
 
 RewriteRule ^recipe/([a-z0-9-]+)/?$ /recipe.php?recipe=$1 [L]
